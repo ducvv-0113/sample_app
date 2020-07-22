@@ -1,0 +1,12 @@
+vi:
+  layouts:
+    application:
+      title: "Hướng dẫn app mẫu Ruby on Rails"
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+  static_page:
+    home:
+      title: "Trang chủ"
+    help:
+      title: "Giúp đỡ"
+
