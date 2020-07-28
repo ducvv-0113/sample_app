@@ -6,7 +6,35 @@ vi:
       vietnamese: "Tiếng Việt"
   static_page:
     home:
+      title_page: "Trang chủ"
       title: "Trang chủ"
+      content_html: "Đây là trang chủ %{link_href} của app ví dụ"
+      home_des: "Ruby on Rails Tutorial"
     help:
+      title_page: "Giúp đỡ"
       title: "Giúp đỡ"
-
+      content_html: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại link %{link_href1} 
+                     nhận trợ giúp về Hướng dẫn app ví dụ tại %{link_href2}"
+      help_des1: "Rails Tutorial chương hỗ trợ"
+      help_des2: "sách Ruby on Rails Tutorial"
+    contact:
+      title: "Liên hệ"
+      content_html: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại
+                    %{link_href}."
+      contact_des: "trang liên hệ"
+    about: 
+      title_page: "Giới thiệu"
+      title: "Giới thiệu"
+      content_html: "%{link_href1}, là 1 phần của
+                      %{link_href2} 
+                      tutorials, là 1
+                      %{link_href3} và
+                      %{link_href4}
+                      để dạy môn phát triển web với
+                      %{link_href5}.
+                      đây là app ví dụ cho tutorial."
+      about_des1: "Ruby on Rails Tutorial"
+      about_des2: "Learn Enough"
+      about_des3: "book"
+      about_des4: "screencast series"
+      about_des5: "Ruby on Rails"

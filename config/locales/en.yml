@@ -6,6 +6,37 @@ en:
       vietnamese: "vietnamese"
   static_page:
     home:
+      title_page: "Home"
       title: "Home"
+      content_html: "This is the home page for the
+                    %{link_href}
+                    sample application."
+      home_des: "Ruby on Rails Tutorial"
     help:
+      title_page: "Help"
       title: "Help"
+      content_html: "Get help on the Ruby on Rails Tutorial at the %{link_href1} 
+                    To get help on this sample app, see the %{link_href2}"
+      help_des1: "Rails Tutorial help section"
+      help_des2: "Ruby on Rails Tutorial book"
+    contact:
+      title: "Contact"
+      content_html: "Contact the Ruby on Rails Tutorial about the sample app at the
+                    %{link_href}."
+      contact_des: "contact page"
+    about:
+      title_page: "About"
+      title: "About"
+      content_html: "The %{link_href1}, part of the
+                      %{link_href2} family of
+                      tutorials, is a
+                      %{link_href3} and
+                      %{link_href4}
+                      to teach web development with
+                      %{link_href5}.
+                      This is the sample app for the tutorial."
+      about_des1: "Ruby on Rails Tutorial"
+      about_des2: "Learn Enough"
+      about_des3: "book"
+      about_des4: "screencast series"
+      about_des5: "Ruby on Rails"
