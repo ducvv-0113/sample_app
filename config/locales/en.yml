@@ -1,0 +1,11 @@
+en:
+  layouts:
+    application:
+      title: "Ruby on Rails Tuturial Sample App"
+      english: "english"
+      vietnamese: "vietnamese"
+  static_page:
+    home:
+      title: "Home"
+    help:
+      title: "Help"
