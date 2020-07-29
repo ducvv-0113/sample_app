@@ -1,0 +1,9 @@
+<% provide :title, t(".title_page") %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= t ".content_html", link_href1: link_to(t(".about_des1"), Settings.link.about1), 
+    link_href2: link_to(t(".about_des2"), Settings.link.about2),
+    link_href3: link_to(t(".about_des3"), Settings.link.about3),
+    link_href4: link_to(t(".about_des4"), Settings.link.about4),
+    link_href5: link_to(t(".about_des5"), Settings.link.about5) %>
+</p>
