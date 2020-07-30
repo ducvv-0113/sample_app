@@ -8,3 +8,8 @@ link:
   about3: "https://www.railstutorial.org/book"
   about4: "https://screencasts.railstutorial.org/"
   about5: "https://rubyonrails.org/"
+  footer1: "https://www.railstutorial.org/"
+  footer2: "https://www.michaelhartl.com/"
+  link_news: "https://news.railstutorial.org/"
+  img_size: "200px"
+

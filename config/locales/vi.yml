@@ -4,12 +4,26 @@ vi:
       title: "Hướng dẫn app mẫu Ruby on Rails"
       english: "Tiếng Anh"
       vietnamese: "Tiếng Việt"
+    header:
+      link_sample_app: "App ví dụ"
+      lang: "Ngôn ngữ"
+      link_home: "Trang chủ"
+      link_help: "Giúp đỡ"
+      link_login: "Đăng nhập"
+    footer:
+      content_html: "%{link_tutorials} bởi %{link_author}"
+      link1: "Hướng dẫn Ruby on Rails"
+      link2: "Michael Hartl"
+      link_contact: "Liên hệ"
+      link_about: "Giới thiệu"
+      link_news: "Tin tức"
   static_page:
     home:
       title_page: "Trang chủ"
       title: "Trang chủ"
       content_html: "Đây là trang chủ %{link_href} của app ví dụ"
       home_des: "Ruby on Rails Tutorial"
+      link_signup: "Đăng ký ngay bây giờ !!!"
     help:
       title_page: "Giúp đỡ"
       title: "Giúp đỡ"
@@ -38,3 +52,8 @@ vi:
       about_des3: "book"
       about_des4: "screencast series"
       about_des5: "Ruby on Rails"
+  users:
+    new:
+      title_page: "Đăng ký"
+      content_html: "Đây là trang đăng ký cho người dùng mới"
+      sign_up: "Đăng ký"

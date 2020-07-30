@@ -1,4 +1,10 @@
-<h1><%= t ".title" %></h1>
-<p>
-  <%= t ".content_html", link_href: link_to(t(".home_des"), Settings.link.home) %>
-</p>
+<div class="center jumbotron container mt-4 text-center">
+  <h1><%= t ".title" %></h1>
+  <h2>
+    <%= t ".content_html", link_href: link_to(t(".home_des"), Settings.link.home) %>
+  </h2>
+  <%= link_to t(".link_signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+ <%= link_to image_tag("rails.svg", alt: "Rails logo", width: Settings.link.img_size),
+Settings.link.home %>
+

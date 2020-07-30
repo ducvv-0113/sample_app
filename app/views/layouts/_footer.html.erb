@@ -1,0 +1,13 @@
+<footer class="footer">
+  <small>
+    <%= t ".content_html", link_tutorials: link_to(t(".link1"), Settings.link.footer1),
+     link_author: link_to(t(".link2"), Settings.link.footer2) %>
+  </small>
+  <nav>
+      <ul>
+        <li><%= link_to t(".link_about"), about_path %></li>
+        <li><%= link_to t(".link_contact"), contact_path %></li>
+        <li><%= link_to(t(".link_news"), Settings.link.link_news) %></li>
+      </ul>
+  </nav>
+</footer>

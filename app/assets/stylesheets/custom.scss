@@ -1,0 +1,41 @@
+/* footer */
+@import "variables.scss";
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $light_weigh;
+  color: $gray;
+  a {
+    color: $gray_darker;
+    &:hover {
+      color: $black;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
