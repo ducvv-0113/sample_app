@@ -60,6 +60,8 @@ en:
       about_des4: "screencast series"
       about_des5: "Ruby on Rails"
   users:
+    show:
+      warning_msg: "User do no exist"
     new:
       title_page: "Sign Up"
       content_html: "This will be a signup page for new users."
@@ -70,6 +72,7 @@ en:
       confirmation_label: "Confirmation"
     create:
       flash_msg: "Welcome to the Sample App, %{username}"
+      warning_msg: "Please check your email to activate your account."
     update:
       updated_msg: "Updated successfull"
       warning_msg: "Please log in"
@@ -106,9 +109,19 @@ en:
       checkbox_msg: "Remember me on this computer"
     create:
       flash_msg: "Invalid email/password combination"
+      warning_msg: "Account not activated. Check your email for the activation link"
   views:
     pagination:
       first: "first"
       last: "last"
       next: "next"
       previous: "previous"
+  user_mailer:
+    account_activation:
+      title_mail: "Activation email"
+      mail_detail: "find me in"
+      confirm_link: "Click here to active your account"
+      mail_subject: "Account activation"
+  account_activations:
+    activated_success: "Activated success"
+    activated_failed: "Activated failed"

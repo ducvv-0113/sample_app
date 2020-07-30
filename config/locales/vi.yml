@@ -58,6 +58,8 @@ vi:
       about_des4: "screencast series"
       about_des5: "Ruby on Rails"
   users:
+    show:
+      warning_msg: "Người dùng không tồn tại"
     new:
       title_page: "Đăng ký"
       content_html: "Đây là trang đăng ký cho người dùng mới"
@@ -68,6 +70,7 @@ vi:
       confirmation_label: "Xác nhận mật khẩu"
     create:
       flash_msg: "Xin chào đến với app ví dụ, %{username}"
+      warning_msg: "Kiểm tra email để kích hoạt tài khoản"
     update:
       updated_msg: "Cập nhật thành công"
       warning_msg: "Hãy đăng nhập trước"
@@ -104,9 +107,21 @@ vi:
       checkbox_msg: "Ghi nhớ tôi trên máy tính này"
     create:
       flash_msg: "Mật khẩu hoặc email không đúng"
+      warning_msg: "Tài khoản chưa được kích hoạt. Kiểm tra email để kích hoạt tài khoản của bạn"
   views:    
     pagination:
       first: "Đầu"
       last: "Cuối"
       next: "Tiếp"
       previous: "Trở lại"
+  user_mailer:
+    account_activation:
+      title_mail: "Email xác nhận"
+      mail_detail: "liên hệ với tôi tại"
+      activated_success: "Xác nhận email thành công"
+      activated_failed: "Xác nhận email thất bại"
+      confirm_link: "Nhấn vào đây để kích hoạt tài khoản"
+      mail_subject: "Email kích họat"
+  account_activations:
+    activated_success: "Xác nhận email thành công"
+    activated_failed: "Xác nhận email thất bại"

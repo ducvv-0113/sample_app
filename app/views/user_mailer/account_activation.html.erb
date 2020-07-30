@@ -1,0 +1,6 @@
+<h1><%= t ".title_mail" %></h1>
+
+<p>
+  <%= @user.name %>, <%= t ".mail_detail" %> app/views/user_mailer/account_activation.html.erb
+</p>
+<%= link_to t(".confirm_link"), edit_account_activation_url(id: @user.activation_token, email: @user.email) %>
