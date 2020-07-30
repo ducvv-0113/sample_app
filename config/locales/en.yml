@@ -4,6 +4,19 @@ en:
       title: "Ruby on Rails Tuturial Sample App"
       english: "english"
       vietnamese: "vietnamese"
+    header:
+      link_sample_app: "Sample app"
+      lang: "Language"
+      link_home: "Home"
+      link_help: "Help"
+      link_login: "Login"
+    footer:
+      content_html: "The %{link_tutorials} by %{link_author}"
+      link1: "Ruby on Rails tutorials"
+      link2: "Michael Hartl"
+      link_about: "About"
+      link_contact: "Contact"
+      link_news: "News"
   static_page:
     home:
       title_page: "Home"
@@ -12,6 +25,7 @@ en:
                     %{link_href}
                     sample application."
       home_des: "Ruby on Rails Tutorial"
+      link_signup: "Sign up now !!!"
     help:
       title_page: "Help"
       title: "Help"
@@ -40,3 +54,8 @@ en:
       about_des3: "book"
       about_des4: "screencast series"
       about_des5: "Ruby on Rails"
+  users:
+    new:
+      title_page: "Sign Up"
+      content_html: "This will be a signup page for new users."
+      sign_up: "Sign Up"

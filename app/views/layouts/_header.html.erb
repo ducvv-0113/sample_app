@@ -1,0 +1,21 @@
+<header class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <%= link_to t(".link_sample_app"), root_path, id: "logo", class: "nav-link" %>
+    <nav>
+      <ul class="navbar-nav ml-auto my-2 my-lg-0 mr-3">
+        <li><%= link_to t(".link_home"), "#", class: "nav-link" %></li>
+        <li class="ml-2 nav-item"><%= link_to t(".link_help"), help_path, class: "nav-link" %></li>
+        <li class="ml-2 nav-item"><%= link_to t(".link_login"), "#", class: "nav-link" %></li>
+        <li class="dropdown ml-2 nav-item">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <%= t ".lang" %>
+          </button>
+          <div class="dropdown-menu">
+            <%= link_to t(".english"), { locale: :en }, { class: "dropdown-item" } %>
+            <%= link_to t(".vietnamese"), { locale: :vi }, { class: "dropdown-item" } %>
+          <div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
