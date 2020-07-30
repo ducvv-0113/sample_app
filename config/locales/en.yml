@@ -59,3 +59,12 @@ en:
       title_page: "Sign Up"
       content_html: "This will be a signup page for new users."
       sign_up: "Sign Up"
+      name_label: "Name"
+      email_label: "Email"
+      password_label: "Password"
+      confirmation_label: "Confirmation"
+    create:
+      flash_msg: "Welcome to the Sample App, %{username}"
+  shared:
+    error_messages:
+      error: "error"

@@ -1,0 +1,10 @@
+@import 'bootstrap/scss/bootstrap';
+
+@import 'abstracts/mixins';
+@import 'abstracts/error';
+@import 'abstracts/variables';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/body';
+@import 'pages/user_details';
+@import 'pages/signup';

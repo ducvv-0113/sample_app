@@ -57,3 +57,12 @@ vi:
       title_page: "Đăng ký"
       content_html: "Đây là trang đăng ký cho người dùng mới"
       sign_up: "Đăng ký"
+      name_label: "Tên"
+      email_label: "Thư điện tử"
+      password_label: "Mật khẩu"
+      confirmation_label: "Xác nhận mật khẩu"
+    create:
+      flash_msg: "Xin chào đến với app ví dụ, %{username}"
+  shared:
+    error_messages:
+      error: "lỗi"

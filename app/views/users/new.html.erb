@@ -1,3 +1,20 @@
-<% provide :title, t(".sign_up") %>
-<h1><%= t ".title_page" %></h1>
-<p><%= t ".content_html" %></p>
+<% provide(:title, t(".title_page")) %>
+<div class="d-flex justify-content-center">
+  <div class="w-50">
+    <h1><%= t ".title_page" %></h1>
+    <div>
+      <%= form_tag users_path do %>
+        <%= render "shared/error_messages" %>
+        <%= label_tag :name, t(".name_label") %>
+        <%= text_field_tag "user[name]", nil, class: "form-control" %>
+        <%= label_tag :email, t(".email_label") %>
+        <%= email_field_tag "user[email]", nil, class: "form-control" %>
+        <%= label_tag :password, t(".password_label") %>
+        <%= password_field_tag "user[password]", nil, class: "form-control" %>
+        <%= label_tag :password_confirmation, t(".confirmation_label") %>
+        <%= password_field_tag "user[password_confirmation]", nil, class: "form-control" %>
+        <%= submit_tag t(".sign_up"), class: "btn btn-primary mt-3" %>
+      <% end %>
+    </div>
+  </div>
+</div>
