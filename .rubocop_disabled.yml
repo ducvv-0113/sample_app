@@ -50,13 +50,13 @@ Metrics/CyclomaticComplexity:
   Description: "Avoid complex methods."
   Enabled: false
 
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Description: >-
                  Align the elements of an array literal if they span more than
                  one line.
   Enabled: false
 
-Style/UnneededPercentQ:
+Style/RedundantPercentQ:
   Description: "Checks for %q/%Q when single quotes or double quotes would do."
   Enabled: false
 

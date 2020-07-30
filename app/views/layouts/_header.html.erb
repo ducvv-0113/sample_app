@@ -3,9 +3,24 @@
     <%= link_to t(".link_sample_app"), root_path, id: "logo", class: "nav-link" %>
     <nav>
       <ul class="navbar-nav ml-auto my-2 my-lg-0 mr-3">
-        <li><%= link_to t(".link_home"), "#", class: "nav-link" %></li>
+        <li><%= link_to t(".link_home"), root_path, class: "nav-link" %></li>
         <li class="ml-2 nav-item"><%= link_to t(".link_help"), help_path, class: "nav-link" %></li>
-        <li class="ml-2 nav-item"><%= link_to t(".link_login"), "#", class: "nav-link" %></li>
+        <% if logged_in? %>
+          <li class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= t ".account" %>
+            </button>
+            <ul class="dropdown-menu">
+              <li><%= link_to t(".profile"), current_user, { class: "dropdown-item" } %></li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <%= link_to t(".log_out"), logout_path, { class: "dropdown-item", method: :delete }%>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li class="ml-2 nav-item"><%= link_to t(".link_login"), login_path, class: "nav-link" %></li>
+        <% end %>
         <li class="dropdown ml-2 nav-item">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <%= t ".lang" %>
