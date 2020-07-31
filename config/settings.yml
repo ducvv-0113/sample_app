@@ -13,3 +13,10 @@ link:
   link_news: "https://news.railstutorial.org/"
   img_size: "200px"
 
+validations:
+  user:
+    email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
+    name_max_length: 50
+    email_max_length: 255
+    pass_min_length: 6
+
