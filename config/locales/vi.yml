@@ -10,6 +10,9 @@ vi:
       link_home: "Trang chủ"
       link_help: "Giúp đỡ"
       link_login: "Đăng nhập"
+      account: "Tài khoản"
+      profile: "Trang cá nhân"
+      log_out: "Đăng xuất"
     footer:
       content_html: "%{link_tutorials} bởi %{link_author}"
       link1: "Hướng dẫn Ruby on Rails"
@@ -58,7 +61,7 @@ vi:
       content_html: "Đây là trang đăng ký cho người dùng mới"
       sign_up: "Đăng ký"
       name_label: "Tên"
-      email_label: "Thư điện tử"
+      email_label: "Email"
       password_label: "Mật khẩu"
       confirmation_label: "Xác nhận mật khẩu"
     create:
@@ -66,3 +69,13 @@ vi:
   shared:
     error_messages:
       error: "lỗi"
+  sessions:
+    new:
+      title_page: "Đăng Nhập"
+      content_html: "Bạn là người dùng mới ? %{link_signup}"
+      sign_up: "Đăng ký ngay !"
+      password_label: "Mật khẩu"
+      email_label: "Email"
+      btn_label: "Đăng nhập"
+    create:
+      flash_msg: "Mật khẩu hoặc email không đúng"
