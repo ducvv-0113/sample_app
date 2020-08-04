@@ -4,11 +4,14 @@
     <h1><%= t ".title_page" %></h1>
     <div>
         <%= form_for :session, url: login_path do |f| %>
-        <%= f.label :email, t(".email_label") %>
-        <%= f.email_field :email, class: "form-control" %>
-        <%= f.label :password, t(".password_label") %>
-        <%= f.password_field :password, class: "form-control" %>
-        <%= f.submit t(".btn_label"), class: "btn btn-primary mt-4" %>
+          <%= f.label :email, t(".email_label") %>
+          <%= f.email_field :email, class: "form-control" %>
+          <%= f.label :password, t(".password_label") %>
+          <%= f.password_field :password, class: "form-control" %>
+          <%= f.label :remember_me, class: "checkbox inline" do %>
+            <%= f.check_box :remember_me %><span><%= t ".checkbox_msg" %></span>
+          <% end %>
+          <%= f.submit t(".btn_label"), class: "btn btn-primary mt-4" %>
         <% end %>
         <p><%= t ".content_html", link_signup: link_to(t(".sign_up"), signup_path) %></p>
     </div>

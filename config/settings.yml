@@ -19,4 +19,4 @@ validations:
     name_max_length: 50
     email_max_length: 255
     pass_min_length: 6
-
+    checkbox_checked: "1"

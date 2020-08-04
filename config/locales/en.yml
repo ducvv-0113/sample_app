@@ -79,5 +79,6 @@ en:
       password_label: "Password"
       email_label: "Email"
       btn_label: "Log in"
+      checkbox_msg: "Remember me on this computer"
     create:
       flash_msg: "Invalid email/password combination"

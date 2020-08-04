@@ -77,5 +77,6 @@ vi:
       password_label: "Mật khẩu"
       email_label: "Email"
       btn_label: "Đăng nhập"
+      checkbox_msg: "Ghi nhớ tôi trên máy tính này"
     create:
       flash_msg: "Mật khẩu hoặc email không đúng"
