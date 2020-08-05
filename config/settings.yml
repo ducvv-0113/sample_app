@@ -20,3 +20,7 @@ validations:
     email_max_length: 255
     pass_min_length: 6
     checkbox_checked: "1"
+    user_per_page: 20
+    size_ava: 50
+gravatar:
+  link: "https://gravatar.com/emails"
