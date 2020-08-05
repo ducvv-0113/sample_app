@@ -13,6 +13,8 @@ en:
       account: "Account"
       profile: "Profile"
       log_out: "Log out"
+      setting: "Setting"
+      users: "Users"
     footer:
       content_html: "The %{link_tutorials} by %{link_author}"
       link1: "Ruby on Rails tutorials"
@@ -68,6 +70,28 @@ en:
       confirmation_label: "Confirmation"
     create:
       flash_msg: "Welcome to the Sample App, %{username}"
+    update:
+      updated_msg: "Updated successfull"
+      warning_msg: "Please log in"
+    index:
+      title_page: "All Users"
+      warning_msg: "Please log in"
+    destroy:
+      deleted_msg: "User deleted"
+      not_deleted_msg: "Delete unsucessfully"
+      warning_msg: "Please log in"
+    user:
+      delete: "delete"
+      confirm_msg: "You sure ?"
+    edit:
+      page_title: "Edit user"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm_password: "Confirm password"
+      label_btn: "Save changes"
+      avatar: "change"
+      warning_msg: "Please log in"
   shared:
     error_messages:
       error: "error"
@@ -82,3 +106,9 @@ en:
       checkbox_msg: "Remember me on this computer"
     create:
       flash_msg: "Invalid email/password combination"
+  views:
+    pagination:
+      first: "first"
+      last: "last"
+      next: "next"
+      previous: "previous"

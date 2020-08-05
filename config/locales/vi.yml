@@ -13,6 +13,8 @@ vi:
       account: "Tài khoản"
       profile: "Trang cá nhân"
       log_out: "Đăng xuất"
+      setting: "Cài đặt"
+      users: "Danh sách người dùng"
     footer:
       content_html: "%{link_tutorials} bởi %{link_author}"
       link1: "Hướng dẫn Ruby on Rails"
@@ -66,6 +68,28 @@ vi:
       confirmation_label: "Xác nhận mật khẩu"
     create:
       flash_msg: "Xin chào đến với app ví dụ, %{username}"
+    update:
+      updated_msg: "Cập nhật thành công"
+      warning_msg: "Hãy đăng nhập trước"
+    index:
+      title_page: "Tất cả người dùng"
+      warning_msg: "Hãy đăng nhập trước"
+    destroy:
+      deleted_msg: "Xóa người dùng thành công"
+      not_deleted_msg: "Xóa người dùng không thành công"
+      warning_msg: "Hãy đăng nhập trước"
+    user:
+      delete: "xóa"
+      confirm_msg: "Bạn có chắc chắn muốn xóa ?"
+    edit:
+      page_title: "Cập nhật"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirm_password: "Xác nhận mật khẩu"
+      label_btn: "Lưu thay đổi"
+      avatar: "thay đổi"
+      warning_msg: "Hãy đăng nhập trước"
   shared:
     error_messages:
       error: "lỗi"
@@ -80,3 +104,9 @@ vi:
       checkbox_msg: "Ghi nhớ tôi trên máy tính này"
     create:
       flash_msg: "Mật khẩu hoặc email không đúng"
+  views:    
+    pagination:
+      first: "Đầu"
+      last: "Cuối"
+      next: "Tiếp"
+      previous: "Trở lại"
