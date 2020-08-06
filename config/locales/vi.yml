@@ -105,6 +105,7 @@ vi:
       email_label: "Email"
       btn_label: "Đăng nhập"
       checkbox_msg: "Ghi nhớ tôi trên máy tính này"
+      forgot_password: "Quên mật khẩu ?"
     create:
       flash_msg: "Mật khẩu hoặc email không đúng"
       warning_msg: "Tài khoản chưa được kích hoạt. Kiểm tra email để kích hoạt tài khoản của bạn"
@@ -122,6 +123,28 @@ vi:
       activated_failed: "Xác nhận email thất bại"
       confirm_link: "Nhấn vào đây để kích hoạt tài khoản"
       mail_subject: "Email kích họat"
+    password_reset:
+      mail_subject: "Thay đổi mật khẩu"
+      mail_title: "Thay đổi mật khẩu"
+      mail_instruction: "Để thay đổi mật khẩu click link phía dưới"
+      mail_content: "Link này sẽ bị vô hiệu trong 2 giờ"
+      mail_content_after: "Nếu bạn không muốn thay đổi mật khẩu, hãy bỏ qua email này"
+      reset_password: "Thay đổi mật khẩu"
   account_activations:
     activated_success: "Xác nhận email thành công"
     activated_failed: "Xác nhận email thất bại"
+  password_resets:
+    new:
+      page_title: "Quên mật khẩu"
+      btn_submit: "Gửi"
+    create:
+      verify_msg: "Kiểm tra email để xác nhận thay đổi mật khẩu"
+      warning_msg: "Email không tồn tại"
+    edit:
+      page_title: "Khôi phục mật khẩu"
+      confirm_label: "Xác nhận mật khẩu"
+      password_label: "Mật khẩu"
+      update_btn: "Khôi phục mật khẩu"
+      password_expired: "Quá hạn khôi phục mật khẩu"
+    update:
+      updated_success: "Mật khẩu đã được cập nhật thành công"
