@@ -11,6 +11,7 @@
           <%= f.label :remember_me, class: "checkbox inline" do %>
             <%= f.check_box :remember_me %><span><%= t ".checkbox_msg" %></span>
           <% end %>
+          <%= link_to t(".forgot_password"), new_password_reset_path %>
           <%= f.submit t(".btn_label"), class: "btn btn-primary mt-4" %>
         <% end %>
         <p><%= t ".content_html", link_signup: link_to(t(".sign_up"), signup_path) %></p>

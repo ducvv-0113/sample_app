@@ -107,6 +107,7 @@ en:
       email_label: "Email"
       btn_label: "Log in"
       checkbox_msg: "Remember me on this computer"
+      forgot_password: "Forgot password ?"
     create:
       flash_msg: "Invalid email/password combination"
       warning_msg: "Account not activated. Check your email for the activation link"
@@ -122,6 +123,30 @@ en:
       mail_detail: "find me in"
       confirm_link: "Click here to active your account"
       mail_subject: "Account activation"
+    password_reset:
+      mail_subject: "Reset password"
+      mail_title: "Password reset"
+      mail_instruction: "To reset your password click the link below:"
+      mail_content: "This link will expire in two hours."
+      mail_content_after: "If you did not request your password to be reset, 
+        please ignore this email and
+        your password will stay as it is."
+      reset_password: "reset password"
   account_activations:
     activated_success: "Activated success"
     activated_failed: "Activated failed"
+  password_resets:
+    new:
+      page_title: "Forgot password"
+      btn_submit: "Submit"
+    create:
+      verify_msg: "Check your email to reset password"
+      warning_msg: "Email does not exist"
+    edit:
+      page_title: "Password rest"
+      confirm_label: "Confirmation"
+      password_label: "Password"
+      update_btn: "Reset password"
+      password_expired: "Reset password token has been expired"
+    update:
+      updated_success: "Password has been updated"

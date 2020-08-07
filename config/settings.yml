@@ -22,5 +22,6 @@ validations:
     checkbox_checked: "1"
     user_per_page: 20
     size_ava: 50
+    token_expired: 2
 gravatar:
   link: "https://gravatar.com/emails"
