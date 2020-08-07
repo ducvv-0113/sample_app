@@ -4,10 +4,15 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
-  def show; end
+  def show
+    return if @user.activated?
+
+    flash[:danger] = t ".warning_msg"
+    redirect_to root_url
+  end
 
   def index
-    @users = User.page(params[:page]).per Settings.validations.user.user_per_page
+    @users = User.is_activated.page(params[:page]).per Settings.validations.user.user_per_page
   end
 
   def new
@@ -38,9 +43,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t ".flash_msg", username: @user.name
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".warning_msg"
+      redirect_to root_url
     else
       render :new
     end
