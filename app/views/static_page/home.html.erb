@@ -1,3 +1,19 @@
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+      <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+      <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".feed_title" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
 <div class="center jumbotron container mt-4 text-center">
   <h1><%= t ".title" %></h1>
   <h2>
@@ -5,5 +21,5 @@
   </h2>
   <%= link_to t(".link_signup"), signup_path, class: "btn btn-lg btn-primary" %>
 </div>
- <%= link_to image_tag("rails.svg", alt: "Rails logo", width: Settings.link.img_size),
-Settings.link.home %>
+ <%= link_to image_tag("rails.svg", alt: "Rails logo", width: Settings.link.img_size), Settings.link.home %>
+<% end %>

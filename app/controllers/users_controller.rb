@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def show
+    @microposts = @user.microposts.page(params[:page]).per Settings.validations.micropost.posts_per_page
     return if @user.activated?
 
     flash[:danger] = t ".warning_msg"
@@ -52,14 +53,6 @@ class UsersController < ApplicationController
   end
 
   private
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".warning_msg"
-    redirect_to login_url
-  end
 
   def correct_user
     redirect_to root_url unless current_user? @user

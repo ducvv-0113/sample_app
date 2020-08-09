@@ -23,5 +23,12 @@ validations:
     user_per_page: 20
     size_ava: 50
     token_expired: 2
+  micropost:
+    posts_per_page: 10
+    maxium_image_size: 5
+    max_length_content: 140
+    valid_content_type: ["image/jpeg", "image/gif", "image/png"]
+  image:
+    img_size: 500
 gravatar:
   link: "https://gravatar.com/emails"
