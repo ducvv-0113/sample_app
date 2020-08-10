@@ -23,6 +23,8 @@ validations:
     user_per_page: 20
     size_ava: 50
     token_expired: 2
+    following_per_page: 10
+    followed_per_page: 10
   micropost:
     posts_per_page: 10
     maxium_image_size: 5

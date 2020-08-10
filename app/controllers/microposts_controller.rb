@@ -26,7 +26,7 @@ class MicropostsController < ApplicationController
   end
 
   def create_failed
-    @feed_items = current_user.feed.page(params[:page]).per Settings.validations.micropost.posts_per_page
+    @feed_items = current_user.feed.order_by_created_at_desc.page(params[:page]).per Settings.validations.micropost.posts_per_page
     render "static_page/home"
   end
 

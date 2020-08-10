@@ -95,6 +95,19 @@ vi:
       label_btn: "Lưu thay đổi"
       avatar: "thay đổi"
       warning_msg: "Hãy đăng nhập trước"
+    show_follow:
+      micropost: "Microposts:"
+      link_profile: "Xem trang cá nhân"
+    follow:
+      btn_follow: "Theo dõi"
+    unfollow:
+      btn_unfollow: "Bỏ theo dõi"
+  following:
+    index:
+      followings: "Đang theo dõi"
+  followers:
+    index:
+      follower: "Người theo dõi"
   shared:
     error_messages:
       error: "lỗi"
@@ -104,6 +117,9 @@ vi:
     user_info:
       link_profile: "Xem trang cá nhân"
       micropost: "micropost"
+    stats:
+      followers: "người theo dõi"
+      following: "đang theo dõi"
   sessions:
     new:
       title_page: "Đăng Nhập"
@@ -170,3 +186,8 @@ vi:
     messages:
       content_type_invalid: "Không đúng định dạng file"
       file_size_out_of_range: "File phải có dung lượng nhỏ hơn 5MB"
+  relationships:
+    destroy:
+      warning_msg: "Người dùng không tồn tại"
+    create:
+      warning_msg: "Người dùng không tồn tại"
