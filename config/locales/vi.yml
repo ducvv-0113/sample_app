@@ -29,6 +29,7 @@ vi:
       content_html: "Đây là trang chủ %{link_href} của app ví dụ"
       home_des: "Ruby on Rails Tutorial"
       link_signup: "Đăng ký ngay bây giờ !!!"
+      feed_title: "Dòng trạng thái"
     help:
       title_page: "Giúp đỡ"
       title: "Giúp đỡ"
@@ -60,6 +61,7 @@ vi:
   users:
     show:
       warning_msg: "Người dùng không tồn tại"
+      micropost: "Micropost"
     new:
       title_page: "Đăng ký"
       content_html: "Đây là trang đăng ký cho người dùng mới"
@@ -96,6 +98,12 @@ vi:
   shared:
     error_messages:
       error: "lỗi"
+    micropost_form:
+      placeholder_txt: "Viết bài đăng ..."
+      btn_post: "Đăng"
+    user_info:
+      link_profile: "Xem trang cá nhân"
+      micropost: "micropost"
   sessions:
     new:
       title_page: "Đăng Nhập"
@@ -148,3 +156,17 @@ vi:
       password_expired: "Quá hạn khôi phục mật khẩu"
     update:
       updated_success: "Mật khẩu đã được cập nhật thành công"
+  microposts:
+    create:
+      created_success: "Đã tạo bài đăng thành công!"
+    destroy:
+      deleted_success: "Đã xóa bài đăng thành công!"
+    micropost:
+      timestamp1: "Đã đăng"
+      timestamp2: "trước"
+      delete: "xóa"
+      confirm_msg: "Bạn có chắc chắn muốn xóa?"
+  errors:
+    messages:
+      content_type_invalid: "Không đúng định dạng file"
+      file_size_out_of_range: "File phải có dung lượng nhỏ hơn 5MB"

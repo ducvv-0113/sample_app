@@ -4,7 +4,7 @@
     <h1><%= t ".page_title" %></h1>
     <div>
       <%= form_for @user do |f| %>
-        <%= render "shared/error_messages" %>
+        <%= render "shared/error_messages", object: f.object %>
         <%= f.label :name, t(".name") %>
         <%= f.text_field :name, class: "form-control" %>
         <%= f.label :email, t(".email") %>

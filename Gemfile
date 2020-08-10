@@ -2,13 +2,16 @@ source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.0"
+gem "active_storage_validations"
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "config"
 gem "faker", "2.1.2"
 gem "figaro"
+gem "image_processing"
 gem "jbuilder", "~> 2.7"
 gem "kaminari"
+gem "mini_magick"
 gem "mysql2", ">= 0.4.4"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.3", ">= 6.0.3.2"
