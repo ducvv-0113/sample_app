@@ -10,6 +10,14 @@ class ApplicationController < ActionController::Base
     redirect_to login_url
   end
 
+  def find_user
+    @user = User.find_by id: params[:id]
+    return if @user.present?
+
+    flash[:danger] = t ".warning_msg"
+    redirect_to root_url
+  end
+
   private
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale

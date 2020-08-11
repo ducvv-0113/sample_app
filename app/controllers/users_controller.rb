@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def show
-    @microposts = @user.microposts.page(params[:page]).per Settings.validations.micropost.posts_per_page
+    @microposts = @user.microposts.order_by_created_at_desc.page(params[:page]).per Settings.validations.micropost.posts_per_page
     return if @user.activated?
 
     flash[:danger] = t ".warning_msg"
@@ -60,14 +60,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit User::USERS_PARAMS
-  end
-
-  def find_user
-    @user = User.find_by id: params[:id]
-    return if @user.present?
-
-    flash[:danger] = t ".warning_msg"
-    redirect_to root_url
   end
 
   def admin_user

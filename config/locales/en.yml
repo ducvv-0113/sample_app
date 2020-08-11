@@ -97,6 +97,19 @@ en:
       label_btn: "Save changes"
       avatar: "change"
       warning_msg: "Please log in"
+    show_follow:
+      micropost: "Microposts:"
+      link_profile: "View my profile"
+    follow:
+      btn_follow: "Follow"
+    unfollow:
+      btn_unfollow: "Unfollow"
+  following:
+    index:
+      followings: "Following"
+  followers:
+    index:
+      follower: "Followers"
   shared:
     error_messages:
       error: "error"
@@ -106,6 +119,9 @@ en:
     user_info:
       link_profile: "View my profile"
       micropost: "micropost"
+    stats:
+      followers: "followers"
+      following: "following"
   sessions:
     new:
       title_page: "Log in"
@@ -172,3 +188,8 @@ en:
     messages:
       content_type_invalid: "has an invalid content type"
       file_size_out_of_range: "should be less than 5MB"
+  relationships:
+    destroy:
+      warning_msg: "User does not exist"
+    create:
+      warning_msg: "User does not exist"
